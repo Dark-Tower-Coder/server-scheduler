@@ -1,33 +1,14 @@
 package de.towers_web.server_scheduler.commands;
 
+import lombok.Data;
 
+import java.util.ArrayList;
+
+@Data
 public class Command {
-
-    String name;
-    String program;
-    String option;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getProgram() {
-        return program;
-    }
-
-    public void setProgram(String program) {
-        this.program = program;
-    }
-
-    public String getOption() {
-        return option;
-    }
-
-    public void setOption(String option) {
-        this.option = option;
-    }
+    private String name;
+    private String program;
+    private ArrayList<String> arguments;
+    private String directory;
+    private String user;
 }

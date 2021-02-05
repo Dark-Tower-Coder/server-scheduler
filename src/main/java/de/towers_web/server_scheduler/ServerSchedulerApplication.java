@@ -8,9 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ServerSchedulerApplication {
 
     public static void main(String[] args) {
-        Service service = new Service();
         SpringApplication.run(ServerSchedulerApplication.class, args);
-
+Service service = new Service();
     }
-
 }
